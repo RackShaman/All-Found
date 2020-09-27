@@ -1,0 +1,29 @@
+{
+
+    "manifest_version": 2,
+    "name": "All Found",
+    "version": "1.0",
+  
+    "description": "Scavenge for wods to complete your provided haiku",
+    "homepage_url": "",
+    "icons": {
+      "48": "icons/beasts-48.png"
+    },
+  
+    "permissions": [
+      "activeTab"
+    ],
+  
+    "browser_action": {
+      "default_icon": "icons/beasts-32.png",
+      "default_title": "All Found",
+      "default_popup": "popup/yourpoem.html"
+    },
+  
+    "web_accessible_resources": [
+      "beasts/frog.jpg",
+      "beasts/turtle.jpg",
+      "beasts/snake.jpg"
+    ]
+  
+  }
