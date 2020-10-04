@@ -1,3 +1,23 @@
+
+function getJSONP(url, success) /*https://stackoverflow.com/questions/2499567/how-to-make-a-json-call-to-a-url/2499647#2499647*/
+{
+
+    var ud = '_' + +new Date,
+        script = document.createElement('script'),
+        head = document.getElementsByTagName('head')[0] 
+               || document.documentElement;
+
+    window[ud] = function(data) 
+    {
+        head.removeChild(script);
+        success && success(data);
+    };
+
+    script.src = url.replace('callback=?', 'callback=' + ud);
+    head.appendChild(script);
+
+}
+
 function gettext()
 {
     var text = document.body.textContent;
