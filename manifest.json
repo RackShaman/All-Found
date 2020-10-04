@@ -4,7 +4,7 @@
     "name": "All Found",
     "version": "1.0",
   
-    "description": "Scavenge for wods to complete your provided haiku",
+    "description": "Scavenge for words to complete your provided haiku",
     "homepage_url": "",
     "icons": {
       "48": "icons/beasts-48.png"
